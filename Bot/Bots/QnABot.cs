@@ -33,7 +33,7 @@ namespace QnAPrompting.Bots
                 // Greet anyone that was not the target (recipient) of this message.
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    await turnContext.SendActivityAsync(MessageFactory.Text($"Welcome to QnA Bot"), cancellationToken);
+                    await turnContext.SendActivityAsync(MessageFactory.Text($"Welcome to ASB Bot"), cancellationToken);
                 }
             }
         }
